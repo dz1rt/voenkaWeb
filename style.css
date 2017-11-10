@@ -1,0 +1,86 @@
+@font-face {
+    font-family: helv;
+    src: url(font/LT_55415.ttf);
+}
+
+body {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+	margin: 0;
+    background: url(img/background/1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Фон видео */
+
+
+.bgvideo {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+/* Краткие ссылки */
+.overlay{
+  	display:none;
+  	position: absolute;
+}
+a:hover .overlay{
+	display: block;
+}
+
+ .tooltip {
+     position: fixed;
+     z-index: 100;
+     /* подсказка должна перекрывать другие элементы */
+
+     padding: 10px 20px;
+     /* красивости... */
+
+     border: 1px solid #b3c9ce;
+     border-radius: 4px;
+     text-align: center;
+     font: italic 14px/1.3 arial, sans-serif;
+     color: #333;
+     background: #fff;
+     box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    }
+a.description {
+	font-style: italic;
+	font-weight: 800;
+	text-decoration: underline;
+}
+
+/* Кнопка следующий урок */
+a.next-lesson {
+	position: relative;
+	border: 3px solid #000;
+	float: right;
+	padding: 10px;
+	margin: 20px 20px;
+	font-weight: 800;
+	text-decoration: none;
+	color: #000;
+}
+
+a.last-lesson {
+	position: relative;
+	border: 3px solid #000;
+	float: left;
+	padding: 10px;
+	margin: 20px 20px;
+	font-weight: 800;
+	text-decoration: none;
+	color: #000;
+}

@@ -1,0 +1,146 @@
+/* Верхушка документа (кроме меню) */
+main > .name-cat {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: helv;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+main > .star-line {
+    position: absolute;
+    width: 100%;
+    top: 13.8%;
+    height: 5%;
+    background: url(img/star_line.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+main > .name-subcat {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: helv;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+/* Основной контент */
+
+.title-fixed {
+	display: none;
+	position: fixed;
+	width: 100%;
+	background: rgba(255,255,255,0.95);
+	z-index: 9980;
+	font-family: helv;
+    letter-spacing: 0.05em;
+	font-size: 0.8em;
+	padding: 0 0 0 20px;
+    text-transform: uppercase;
+    border-bottom: 2px dashed #000;
+	top: 6%;
+}
+
+.title-fixed > .left-title {
+	width: 90%;
+	float: right;
+}
+
+section {
+    position: absolute;
+    width: 90%;
+    top: 26%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: helv;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
+
+section > .title {
+	display: flex;
+	width: 95%;
+    margin: 10px;
+    padding: 0 0 0 20px;
+    text-transform: uppercase;
+    border-bottom: 2px dashed #000;
+}
+
+.title > .left-title {
+	width: 90%;
+	float: left;
+}
+
+.title > .back_button > a {
+    cursor: pointer;
+	padding: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #000;
+	text-align: center;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.5s;
+	width: 5%;
+	border: 2px solid #000;
+}
+
+section > .title > .left-title > h3 {
+	margin: 0 10px 10px 10px;
+}
+
+section > .text {
+    font-size: 1.1em;
+    padding: 15px 100px;
+    padding-bottom: 30px;
+}
+
+/* 
+		КНОПКА ВВЕРХ
+*/
+.buttonUp {
+	position: fixed;
+	width: 10%;
+	top: 88%;
+	left: 88%;
+	border: 2px solid #000;
+	z-index: 555;
+	text-align: center;
+	line-height: 10%;
+	padding: 30px 0 30px 0;
+	font-family: helv;
+	font-weight: 800;
+	text-decoration: none;
+	color: #000;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+/* 
+		ВИДЕО ПРЕЗЕНТАЦИИ
+*/
+
+.video-slide {
+	display: none;
+	position: fixed;
+	color: rgb(255, 255, 255);
+	padding: 5px;
+	float: right;
+	top: 60%;
+	right: 0;
+	transform: translateY(-50%) translateX(55%);
+	background: rgba(0,0,0,0.95);
+	z-index: 888;
+}

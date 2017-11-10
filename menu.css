@@ -1,0 +1,720 @@
+/* меню */
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -93%;
+    font-family: helv;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.9;
+    z-index: 9999;
+}
+
+nav a {
+    display: inline;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    color: floralwhite;
+}
+
+a.active {
+	color: #1e90ff;
+}
+
+nav > .bottom-line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* кнопка меню */
+
+nav > .name-menu {
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 5px;
+    left: 50%;
+    height: 4%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: #fff;
+    opacity: 0.8;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .name-menu::after {
+    content: url(img/right_line.png);
+    opacity: 0.8;
+}
+
+nav > .name-menu::before {
+    content: url(img/left_line.png);
+    opacity: 0.8;
+}
+
+nav > .name-menu:hover {
+    opacity: 1;
+}
+
+/* Логотип */
+
+nav > .logo-menu {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 50%;
+    height: 15%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    color: aliceblue;
+    background: url(img/head_main.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 1;
+}
+
+nav > .logo_uvc {
+    float: left;
+    margin: 1% 0 0 5%;
+    width: 15%;
+    height: 15%;
+    background: url(img/logo_uvc.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+nav > .logo_unn {
+    float: right;
+    margin: 1% 5% 0 0;
+    width: 15%;
+    height: 15%;
+    background: url(img/logo_unn.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+nav > .star-line {
+    position: absolute;
+    top: 21.5%;
+    left: 50%;
+    width: 100%;
+    height: 5%;
+    background: url(img/star_line.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateX(-50%);
+}
+
+nav > .main {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 25%;
+    height: 8%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .main:hover {
+    opacity: 1;
+}
+
+/* Руководящие документы */
+
+nav > .doc {
+    position: absolute;
+    left: 80%;
+    top: 30%;
+    width: 25%;
+    height: 8%;
+    transform: translateX(-50%);
+    font-size: 1.5em; 
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .doc:hover {
+    opacity: 1;
+}
+
+nav > .doc-1 {
+    position: absolute;
+    left: 150%;
+    top: 40%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .doc-1:hover {
+    opacity: 1;
+}
+
+nav > .doc-2 {
+    position: absolute;
+    left: 160%;
+    top: 47%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .doc-2:hover {
+    opacity: 1;
+}
+
+nav > .doc-3 {
+    position: absolute;
+    left: 170%;
+    top: 54%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .doc-3:hover {
+    opacity: 1;
+}
+
+/* О предмете */
+
+nav > .about {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    width: 25%;
+    height: 8%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .about:hover {
+    opacity: 1;
+}
+
+nav > .about-1 {
+    position: absolute;
+    left: -50%;
+    top: 40%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .about-1:hover {
+    opacity: 1;
+}
+
+nav > .about-2 {
+    position: absolute;
+    left: -60%;
+    top: 47%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .about-2:hover {
+    opacity: 1;
+}
+
+nav > .about-3 {
+    position: absolute;
+    left: -70%;
+    top: 54%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .about-3:hover {
+    opacity: 1;
+}
+
+nav > .about-4 {
+    position: absolute;
+    left: -80%;
+    top: 61%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .about-4:hover {
+    opacity: 1;
+}
+
+nav > .about-5 {
+    position: absolute;
+    left: -90%;
+    top: 68%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .about-5:hover {
+    opacity: 1;
+}
+
+nav > .about-6 {
+    position: absolute;
+    left: -100%;
+    top: 75%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .about-6:hover {
+    opacity: 1;
+}
+
+nav > .about-7 {
+    position: absolute;
+    left: -110%;
+    top: 82%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .about-7:hover {
+    opacity: 1;
+}
+
+/* Глоссарий */
+
+nav > .gloss-1 {
+    position: fixed;
+    left: 43%;
+    top: 110%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .gloss-1:hover {
+    opacity: 1;
+}
+
+nav > .gloss-2 {
+    position: fixed;
+    left: 43%;
+    top: 117%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .gloss-2:hover {
+    opacity: 1;
+}
+
+nav > .gloss-3 {
+    position: fixed;
+    left: 43%;
+    top: 124%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .gloss-3:hover {
+    opacity: 1;
+}
+
+nav > .gloss-4 {
+    position: fixed;
+    left: 43%;
+    top: 131%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .gloss-4:hover {
+    opacity: 1;
+}
+
+nav > .gloss-5 {
+    position: fixed;
+    left: 43%;
+    top: 138%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .gloss-5:hover {
+    opacity: 1;
+}
+
+/* Содержание дисциплины */
+
+nav > .cont-1 {
+    position: fixed;
+    left: 43%;
+    top: 110%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .cont-1:hover {
+    opacity: 1;
+}
+
+nav > .cont-2 {
+    position: fixed;
+    left: 43%;
+    top: 117%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .cont-2:hover {
+    opacity: 1;
+}
+
+nav > .cont-3 {
+    position: fixed;
+    left: 43%;
+    top: 124%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .cont-3:hover {
+    opacity: 1;
+}
+
+nav > .cont-4 {
+    position: fixed;
+    left: 43%;
+    top: 131%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .cont-4:hover {
+    opacity: 1;
+}
+
+nav > .cont-5 {
+    position: fixed;
+    left: 43%;
+    top: 138%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .cont-5:hover {
+    opacity: 1;
+}
+
+nav > .cont-6 {
+    position: fixed;
+    left: 43%;
+    top: 145%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .cont-6:hover {
+    opacity: 1;
+}
+
+nav > .cont-7 {
+    position: fixed;
+    left: 43%;
+    top: 152%;
+    width: 20%;
+    height: 5%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .cont-7:hover {
+    opacity: 1;
+}
+
+
+/* Тема 1 */
+
+nav > .theme-1 {
+	display: block;
+	position: fixed;
+	border: 3px solid #fff;
+	overflow: hidden;
+	color: white;
+	left: 73%;
+	top: 120%;
+	width: 34%;
+	height: 47%;
+	transform: translateX(-50%);
+	opacity: 0.6;
+	transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .theme-1:hover {
+	opacity: 1;
+}
+
+nav > .theme-2 {
+	display: block;
+	position: fixed;
+	border: 3px solid #fff;
+	color: white;
+	overflow: hidden;
+	left: 73%;
+	top: 120%;
+	width: 34%;
+	height: 47%;
+	transform: translateX(-50%);
+	opacity: 0.6;
+	transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .theme-2:hover {
+	opacity: 1;
+}
+
+nav > .theme-3 {
+	display: block;
+	position: fixed;
+	border: 3px solid #fff;
+	color: white;
+	overflow: hidden;
+	left: 73%;
+	top: 120%;
+	width: 34%;
+	height: 47%;
+	transform: translateX(-50%);
+	opacity: 0.6;
+	transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .theme-3:hover {
+	opacity: 1;
+}
+
+nav > .theme-4 {
+	display: block;
+	position: fixed;
+	border: 3px solid #fff;
+	color: white;
+	overflow: hidden;
+	left: 73%;
+	top: 120%;
+	width: 34%;
+	height: 47%;
+	transform: translateX(-50%);
+	opacity: 0.6;
+	transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .theme-4:hover {
+	opacity: 1;
+}
+
+nav > .theme-5 {
+	display: block;
+	position: fixed;
+	border: 3px solid #fff;
+	color: white;
+	overflow: hidden;
+	left: 73%;
+	top: 120%;
+	width: 34%;
+	height: 47%;
+	transform: translateX(-50%);
+	opacity: 0.6;
+	transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .theme-5:hover {
+	opacity: 1;
+}
+
+nav > .theme-6 {
+	display: block;
+	position: fixed;
+	border: 3px solid #fff;
+	color: white;
+	overflow: hidden;
+	left: 73%;
+	top: 120%;
+	width: 34%;
+	height: 47%;
+	transform: translateX(-50%);
+	opacity: 0.6;
+	transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+nav > .theme-6:hover {
+	opacity: 1;
+}
+
+.name-theme {
+	width: 100%;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	font-size: 1.5em;
+}
+
+.description-theme {
+	width: 90%;
+	text-align: left;
+	padding-left: 5%;
+	font-size: 1.3em;
+}
+
+.theme-in-theme {
+	width: 90%;
+	padding-top: 10px;
+	text-align: left;
+	padding-left: 5%;
+}
+
+.theme-in-theme > a {
+	position: inherit;
+	padding-bottom: 40px;
+}
+
+.theme-in-theme > a:hover {
+	color: #1e90ff;
+}
+
+.img-theme {
+	padding-top: 10px;
+}
+
